@@ -60,6 +60,419 @@ Fonts
 1.0 Navigation
 --------------------------------------------------------------*/
 
+.almanac-header{
+	width:100%;
+	height:100vh;
+	overflow:auto;
+	background-color:transparent;
+	color:#fff;	
+	position:relative;
+}
+.almanac-header-logo{
+	position:absolute;
+	top:30px;
+	left:30px;
+	width: 66px;
+	height: 25px;
+	padding: 0;
+	overflow: hidden;
+	display: inline-block;
+	background-image: url(http://true.ink/wp-content/uploads/2015/05/logo_sprite.png);
+	background-position: 0px 0px;
+	background-size: 66px 50px;
+	background-repeat: no-repeat;
+}
+
+.almanac-header h1 {
+	font-size:38px;
+	letter-spacing:5px;
+	padding:0;
+	margin:0;
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight:900;
+	text-transform:uppercase;
+	text-align:center;
+	padding-top:200px;
+}
+.almanac-header h2{
+	padding-top:140px;
+	font-family: "brandon-grotesque",sans-serif;
+	text-align:center;
+	font-size:26px;
+	letter-spacing:4px;
+	font-weight:600;
+	font-style:none;
+	margin:0 0 40px 0;
+	text-transform:uppercase;
+	position:absolute;
+	width:100%;
+	bottom:100px;
+}
+.almanac-header .subtitle{
+	font-size:16px;
+	text-transform:uppercase;
+	font-family: 'Source Code Pro', sans-serif;
+	letter-spacing:3px;
+	color:#fff;
+	font-weight:400;
+	padding-top:15px;
+}
+@media only screen and (max-width : 480px) {
+	.almanac-header h1{
+		font-size:50px!important;
+		letter-spacing:6px;
+	}
+	.almanac-header h2{
+		font-size:26px;
+		letter-spacing:7px;	
+	}
+}
+.almanac-header .down-arrow{
+	margin:0 0 20px 0;
+	height:55px;
+	background-image:url(http://true.ink/wp-content/uploads/2015/10/brew-icon-sm.png);
+	background-size:auto 100%;
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+} 
+ 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+        animation-iteration-count:infinite;
+-webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+} 
+
+.almanac-header .logo{
+	margin:0 0 60px 0;
+	height:55px;
+	background-image:url(http://true.ink/wp-content/uploads/2015/08/true-yellow-sm.png);
+	background-size:auto 100%;
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:100%;
+	position:absolute;
+	top:110px;
+	left:0;
+}
+.almanac-index-wrap{
+	padding:20px;
+	width:100%;
+	max-width:600px;
+	margin:0 auto;
+}
+.almanac-index{
+	border:2px solid rgba(0,0,0,0.8);
+	width:100%;
+	max-width:600px;
+	margin:0 auto;
+	padding-bottom:30px;
+}
+.almanac-index-header{
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight:900;
+	display:block;
+	font-size:2rem;
+	letter-spacing:0.7rem;
+	padding:50px 0;
+	width:100%;
+	border-bottom:2px solid rgba(0,0,0,0.8);
+	text-transform:uppercase;
+}
+.almanac-index article{
+	padding:30px 20px 0 20px;
+}
+.almanac-index a{
+	display:inline-block;
+	width:100%;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.almanac-index a:hover{
+	color:#000;
+}
+.almanac-index a:after{
+	display:block;
+	width:50px;
+	height:3px;
+	background-color:black;
+	margin:0 auto;
+	color:#000;
+	text-align:center;
+}
+.almanac-index h2{
+	font-family: 'Source Code Pro', sans-serif;
+	text-transform:uppercase;
+	font-weight:400;
+	letter-spacing:3px;
+	font-size:16px;
+}
+.almanac-index .divider{
+	display:block;
+	width:40px;
+	height:2px;
+	background-color:#000;
+	margin:30px auto 0 auto;
+    /*
+    -webkit-transition: width 0.4s linear;
+    -moz-transition: width 0.4s linear;
+    -o-transition: width 0.4s linear;
+    transition: width 0.4s linear;
+	*/
+}
+/*
+.almanac-index a:hover .divider{
+	width:80px;	
+}
+*/
+.almanac-index .article-number{
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight:900;
+	display:block;
+	font-size:2rem;
+	padding:10px 0;
+}
+
+.almanac-header .header-top{
+	width:100%;
+	display:table;
+	padding:0 20px;
+}
+.almanac-header .header-top-left, .almanac-header .header-top-right{
+	width:50%;
+	height:50px;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.almanac-footer {
+	padding:10px 20px;
+	text-align:center;
+	font-size:12px;
+	text-transform:uppercase;
+	color:rgba(0,0,0,0.4);
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight:700;
+	letter-spacing:2px;
+}
+
+.almanac-body{
+}
+.almanac-body section{
+	padding:40px 20px 15px 20px;
+	/* background-size:cover; */
+	background-position:center center;
+	background-repeat:no-repeat;	
+}
+.almanac-body section img{
+	width:100%;
+	max-width:600px;
+	margin:0 auto;
+	padding-bottom:30px;
+}
+
+.almanac-body .story-box{
+	border:2px solid;
+	width:100%;
+	max-width:600px;
+	margin:0 auto;
+}
+.almanac-body .story-box-row{
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	background-color:white;
+}
+.almanac-body .todo-box-row{
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	border-bottom:2px solid black;
+}
+.almanac-body .todo-box-number{
+	width:140px;	
+	border-left:2px solid #000;
+	font-size:20px;
+	line-height:70px;
+	text-align:right;
+	vertical-align:middle;
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight:900;
+	background-color: #F1F833;
+}
+.almanac-body .story-box-cell{
+	display:table-cell;
+	padding:0 20px;
+}
+.almanac-body .story-box-number{
+	width:120px;	
+	border-right:2px solid #000;
+	font-size:40px;
+	line-height:100px;
+	text-align:right;
+	vertical-align:middle;
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight:900;
+}
+.almanac-body .story-box-title{
+	width:auto;
+	text-align:left;
+	vertical-align:middle;
+}
+.todo {
+	font-family: "Source Code Pro",sans-serif;
+	font-size:22px;
+	text-align:left;
+	padding:20px 30px;
+	letter-spacing:3px;
+	border-bottom: 1px black solid;
+	text-transform:uppercase;
+}
+.todo a {color:black!important; font-size:16px;}
+.todo a:visited {
+text-decoration:line-through;
+text-decoration-color:red;	
+}
+.todo a:hover {
+text-decoration:line-through;
+text-decoration-color:red;	
+}
+.todo a:active {
+text-decoration:line-through;
+text-decoration-color:red;	
+}
+.almanac-body .story-box-title h4{
+	padding:0;
+	margin:0;
+	font-family: "brandon-grotesque",sans-serif;
+	text-transform:uppercase;
+	letter-spacing:4px;
+	font-weight:600;
+	font-size:16px;
+}
+.almanac-body .story-box-description{
+	display:block;
+	width:100%;
+	padding:40px;
+	font-size:18px;
+	border-top:2px solid #000;
+	font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+	text-align:left;
+}
+.almanac-body .story-box-description p{
+	margin:0;
+	padding:0;
+	line-height:150%;
+}
+
+.almanac-body .story-box-img{
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0;
+	border-top:2px solid;	
+}
+.almanac-body .feature-story-img{
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0;
+	border-bottom:2px solid;	
+}
+.almanac-body .story-box-link{
+	display:block;
+	width:100%;
+	padding:30px;
+	font-size:38px;
+	letter-spacing:4px;
+	border-top:2px solid #000;
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight:900;
+	text-transform:uppercase;
+	color:#000;    
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.almanac-body .story-box-link:hover{
+	text-decoration:none;
+	/*background-color:#000;
+	color:yellow;*/
+}
+
+.almanac-body .invert,
+.almanac-body .invert .story-box-cell,
+.almanac-body .invert .story-box-link,
+.almanac-body .invert .story-box-img,
+.almanac-body .invert .story-box-description{
+	border-color:#fff !important;
+}
+.almanac-body .invert .story-box-link{
+	background-color:#fff;
+}
+.almanac-body .advertisement p{
+	font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+	font-size:13px;
+	color:#555;
+	font-style:italic;
+	padding:20px 0;
+}
+.almanac-body .advertisement a{
+	width:100%;
+	display:block;
+	max-width:600px;
+	margin:0 auto;	
+}
+.almanac-body .advertisement a img{
+	width:100%;
+	height:auto;
+}
+
+.almanac-body .action p{
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight:900;
+	text-transform:uppercase;
+	font-size:34px;
+	line-height:140%;
+	font-style:italic;
+	padding:20px 0;
+}
+.almanac-body .action a{
+	display:inline-block;
+	width:100%;
+	margin:0 auto;
+	max-width:400px;
+	font-family: "brandon-grotesque",sans-serif;
+	font-weight:900;
+	text-transform:uppercase;
+	font-size:38px;
+	padding:30px;
+	color:#fff;
+}
+
 /*--------------------------------------------------------------
 1.2 Menus
 --------------------------------------------------------------*/
@@ -114,14 +527,38 @@ Fonts
 	background-color:#fefd00;
 	color:#000000;
 }
-
-
+#video-bg {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 0;
+}
+#video-bg > video {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
+#video-bg {
+    background-image: url('http://true.ink//wp-content/uploads/2015/10/horseloophome_poster.jpg');
+    background-size: cover;
+    background-size: auto 100%;
+    background-position: center center;
+    min-height: 100%;
+}
+.container {padding-top:50px;}
+}
 .logo { 
 	position: absolute;
 	top: 12px;
 	left: 37px;
 	z-index: 201;
-	background: url("images/logo_sprite_white.png") no-repeat top left rgba(0, 0, 0, 0);
+	background: url('http://true.ink/wp-content/uploads/2015/05/logo_sprite.png') no-repeat top left rgba(0, 0, 0, 0);
 	width: 66px;
 	height: 25px;
 	overflow: hidden;
@@ -152,9 +589,50 @@ Fonts
 	-ms-transition: transform .5s;
 	transition: transform .5s;
 }
-
-
-
+.home-email {
+	position:absolute; top:40%; left:30%; width:40%; z-index:100; margin:auto;
+}
+.email-input {
+    height: 50px;
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FF0!important;
+    font-size: 22px;
+    font-family: adobe-caslon-pro;
+    font-style: italic;
+    text-align: center;
+}
+input.email-input {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+}
+.menu-item-last {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: BrandonText-Bold;
+    text-transform: uppercase;
+    color: #FFF;
+    text-shadow: 0px 9px 30px rgba(0, 0, 0, 0.6);
+    
+}
+.submit-button-home {
+    transition: all 0s linear 0s;
+    padding: 0px;
+    font-size: 22px;
+    font-family: BrandonText-Bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #FFF;
+    line-height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+.submit-button-home:hover {
+    background-color: yellow;
+    color: #000;
+}
 @media only screen and (min-width : 768px) {
 	.headroom.hide-menu {
 		top: 0;
@@ -359,7 +837,7 @@ input::-moz-focus-inner {
 }
 .bottom-action .share { left:0; background-color:#ffffe9;  }
 .bottom-action .read { right: 0; background-color:#b4ff00; border-left: 1px solid rgba(0, 0, 0, 0); }
-.bottom-action .read:hover  { text-decoration: none !important; background-color: #18230E !important; color: #FEFD00 !important; }
+.bottom-action .read:hover  { text-decoration: none !important; background-color: black !important; color: #F1F833 !important; }
 
 .inner-mitem:hover .bottom-action .share, .inner-mitem:hover .bottom-action .read { border-color:black; opacity: 1; }
 
@@ -1603,14 +2081,14 @@ video{
 
 .down-arrow {
 	font-size: 70px !important;
-	color:black;
+	color:#FF0;
 	left: 50%;
 	bottom:30px;
 	position: absolute;
 	transition: all 1s;
 	/*-webkit-animation: mymove 3s infinite;
     animation: mymove 3s infinite;*/
-	border: 1px solid black;
+	border: 1px solid #ff0;
 	padding: 0 9px;
 	margin-left: -27px;
 }
@@ -1632,9 +2110,9 @@ video{
 
 
 .down-arrow:hover {
-	color:#FEFD00;
+	color:white;
 	cursor:pointer;
-	border-color:#FEFD00;
+	border-color:white;
 }
 .page, .home {
 	background-color: #FFFFDE;
@@ -1771,19 +2249,19 @@ video{
 
 
 *::-webkit-input-placeholder {
-    color: black;
+    color: #ff0;
 }
 *:-moz-placeholder {
     /* FF 4-18 */
-    color: black;
+    color: #ff0;
 }
 *::-moz-placeholder {
     /* FF 19+ */
-    color: black;
+    color: #ff0;
 }
 *:-ms-input-placeholder {
     /* IE 10+ */
-    color: black;
+    color: #ff0;
 }
 
 
@@ -2446,7 +2924,7 @@ video{
 }
 
 
-.single-story .text-wrap.m-t-full-width-image { margin-top:100px; }
+.single-story .text-wrap.m-t-full-width-image { margin-top:1px; }
 .single-story .text-wrap.m-t-50 { margin-top:50px; }
 
 @media only screen and (max-width: 768px)  {
@@ -3628,6 +4106,7 @@ display: inline-block;
 border: 2px solid white;
 }
 @media only screen and (max-width: 480px) {
+	.home-email {left:5%; width:90%;}
 
 	.wp-caption-text {
 		width: 100%;

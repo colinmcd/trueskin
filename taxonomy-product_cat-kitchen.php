@@ -64,16 +64,15 @@ $image = get_field('home_page_background_image','options');
                  
 
 
-<div class="story-cover" style="overflow:hidden; position: relative; z-index: 1;">
+<!-- div class="story-cover" style="overflow:hidden; position: relative; z-index: 1;">
 	<?php getHomePageVideo(get_the_id()); ?>
 	<i class="fa fa-angle-down down-arrow"></i>
-</div>
+</div -->
 
 
 
 <div id="primary" class="content-area v2" style="background-color:#FFFFDE; z-index: 1; position: relative;">
 	<main id="main" class="site-main" role="main">
-<a name="library"></a> 
 
 		
 			<!-- <div class="section" id="section0">
@@ -102,7 +101,7 @@ $image = get_field('home_page_background_image','options');
 										// $heightArr = array(450,215,215,450,215);
 										// $widthArr = array(4, 4, 4, 8, 4);
 										// $imagesArr = array("block1.jpg","block2.jpg","block3.jpg","block5.jpg","block4.jpg");
-										get_home_stories2();
+										get_kitchen_products();
 										// get_home_stories2();
 										// get_home_stories2();
 									 ?>

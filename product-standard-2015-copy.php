@@ -197,14 +197,14 @@ if ( ! empty( $tags ) ) { //make sure its not empty
 											                        </div>
 											                    </div>
 											                    
-											                     <a href="mailto:yes@true.ink" target="_blank"><button type="submit"
+											                     <button type="submit"
 																    data-quantity="1" data-product_id="<?php echo $id; ?>"
-																    class="action-button buy-button">
-																    Reserve
-																</button></a>
+																    class="hidden-xs button custom_buy alt add_to_cart_button product_type_simple action-button buy-button">
+																    Buy
+																</button>
 											                </div>
 
-											                <!-- div class="supply-row hidden-lg hidden-md hidden-sm" >
+											                <div class="supply-row hidden-lg hidden-md hidden-sm" >
 											                	
 										                        <button type="submit" style="border-top:1px solid #000;"
 																    data-quantity="1" data-product_id="<?php echo $id; ?>"
@@ -212,7 +212,7 @@ if ( ! empty( $tags ) ) { //make sure its not empty
 																    Buy
 																</button>
 
-											                </div -->
+											                </div>
 											            </div>                   
 											            
 											        </div>
@@ -224,17 +224,94 @@ if ( ! empty( $tags ) ) { //make sure its not empty
 
 										</div>
 									</div>
-									
+									<!-- div id="suggestions" style="padding:20px 0">
+											        	<div class="heading-wrap">
+											            	<h2>Take Your Pick</h2>
+											            </div>
+											            <div class="">
+											                <div class="row">
+											                    <?php if($related_products) { foreach ($related_products as $related_product) { ?>
+											                    	
+												                    <div class="col-xs-12 col-sm-6 col-md-4">
+												                        <div class="post">
+												                            <table>
+												                                <tr height="40">
+												                                    <td class="hed" rowspan="3" colspan="3"><h3><?php echo $related_product['title'] ?></h3></td>
+												                                    <td class="system"><?php //echo $related_product['category'] ?></td>
+												                                </tr>
+												                                <tr>
+												                                    <td class="system">&nbsp;</td>
+												                                </tr>
+												                                <tr>
+												                                    <td class="system"><?php //echo $related_product['author'] ?></td>
+												                                </tr>
+												                                <tr>
+												                                    <td colspan="4" class="story-th" height="200" style="background:url(<?php echo $related_product['image'] ?>) no-repeat center center transparent; background-size:cover;">
+												                                    	
+												                                    </td>
+												                                </tr>
+												                                <tr class="hidden-xs">
+												                                    <td colspan="2" class="bottom bottom-left">
+												                                        <div class="social">
+												                                            <div class="share-text">
+												                                                Share
+												                                            </div>
+												                                            <ul class="icons">
+												                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+												                                                <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+												                                            </ul>
+												                                        </div>
+												    
+												                                    </td>
+												                                    <td colspan="2" class="bottom"><a href="<?php echo $related_product['link'] ?>" class="go">Go</a></td>
+												                                </tr>
+																				
+												                                <tr class="hidden-lg hidden-md hidden-sm">
+												                                    <td colspan="4" class="bottom bottom-left" style="width:100%;">
+												                                        <div class="social">
+												                                            <div class="share-text" style="padding: 20px;">
+												                                                Share
+												                                            </div>
+												                                            <ul class="icons" style="font-size: 30px; height: 34px; line-height: 25px; margin-top: -41px;">
+												                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+												                                                <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+												                                            </ul>
+												                                        </div>
+												    
+												                                    </td>
+												                                   
+												                                </tr>
+												                                <tr class="hidden-lg hidden-md hidden-sm">
+												                                    
+												                                    <td colspan="4" class="bottom"  style="width:100%; border-top:1px solid black;"><a href="<?php echo $related_product['link'] ?>" class="go" style="padding: 20px;">Go</a></td>
+												                                </tr>
+												                                
+												                            </table>
+												                        </div>                
+												                    </div>
+
+												                <?php } } ?>
+											                   
+											        		</div>
+											        	</div>                    
+											        </div>
+								</div -->
 							<div class="height57"></div>
 
 						</div>
 					</div>
 
 				</div>
-				<!-- div class="scroll-to-top">top</div -->
-				<div class="almanac-footer" style="color:black">
-        	&copy; 2015 True The Magazine, Inc
-        </div>
+				<div class="scroll-to-top">top</div>
+				<div class="footer">
+					<div class="credits">
+						<?php echo CREDITS ?>
+					</div>
+				</div>
 			</div>
 			
 			

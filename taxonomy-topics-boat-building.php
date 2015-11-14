@@ -45,7 +45,7 @@ $image = get_field('home_page_background_image','options');
 
 ?>
 
-<!-- div class="home-email">
+<div class="home-email">
                         <div class="menu-item bottom last">                        	
 <form action="//ink.us9.list-manage.com/subscribe/post?u=7b051329937c2cd004c0f6783&amp;id=e417058757" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
 
@@ -59,7 +59,7 @@ $image = get_field('home_page_background_image','options');
                         	</form>
 
                         	                        </div>
-                    </div -->   
+                    </div>   
                   
                  
 
@@ -73,7 +73,6 @@ $image = get_field('home_page_background_image','options');
 
 <div id="primary" class="content-area v2" style="background-color:#FFFFDE; z-index: 1; position: relative;">
 	<main id="main" class="site-main" role="main">
-<a name="library"></a> 
 
 		
 			<!-- <div class="section" id="section0">

