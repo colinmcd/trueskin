@@ -3431,6 +3431,24 @@ Label the data
 .woocommerce-page .woocommerce-message:before{
 	content:none;
 }
+
+.woocommerce .woocommerce-error, .woocommerce-page .woocommerce-error {
+	border: none;
+}
+
+.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce-page .woocommerce-error, .woocommerce-page .woocommerce-info, .woocommerce-page .woocommerce-message {
+	background: transparent;
+}
+
+.woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover {
+	background: transparent;
+	color: black;
+}
+
+.woocommerce .woocommerce-error:before, .woocommerce-page .woocommerce-error:before {
+	display: none;
+}
+
 .fa-facebook, .fa-twitter, .fa-instagram, .fa-envelope {color:#000!important}
 .fa-circle {color:#fff!important}
 .navbar-brand {
