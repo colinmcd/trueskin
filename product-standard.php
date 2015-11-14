@@ -197,14 +197,14 @@ if ( ! empty( $tags ) ) { //make sure its not empty
 											                        </div>
 											                    </div>
 											                    
-											                     <a href="mailto:yes@true.ink" target="_blank"><button type="submit"
+											                     <button type="submit"
 																    data-quantity="1" data-product_id="<?php echo $id; ?>"
-																    class="action-button buy-button">
-																    Reserve
-																</button></a>
+																    class="hidden-xs button custom_buy alt add_to_cart_button product_type_simple action-button buy-button">
+																    Buy
+																</button>
 											                </div>
 
-											                <!-- div class="supply-row hidden-lg hidden-md hidden-sm" >
+											                <div class="supply-row hidden-lg hidden-md hidden-sm" >
 											                	
 										                        <button type="submit" style="border-top:1px solid #000;"
 																    data-quantity="1" data-product_id="<?php echo $id; ?>"
@@ -212,7 +212,7 @@ if ( ! empty( $tags ) ) { //make sure its not empty
 																    Buy
 																</button>
 
-											                </div -->
+											                </div>
 											            </div>                   
 											            
 											        </div>

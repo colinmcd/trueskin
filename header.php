@@ -22,7 +22,6 @@ $transitionTime = ot_get_option("transitiontime");
 		    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
 
 		<style>
-		.cart {display:none}
 			.fp-easing {
 			    -webkit-transition: all <?php echo $transitionTime ?>ms cubic-bezier(0.420, 0.000, 0.420, 1.000) !important; /* Safari<=6 Android<=4.3 */
 			    transition: all <?php echo $transitionTime ?>ms cubic-bezier(0.420, 0.000, 0.420, 1.000) !important;
