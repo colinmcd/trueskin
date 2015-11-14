@@ -14,8 +14,6 @@ get_header();
 
 ?>
 
-
-
 <section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		
@@ -45,4 +43,5 @@ get_header();
 	</main><!-- #main -->
 </div><!-- #primary -->
 <div class="height120"></div>
+
 <?php get_footer(); ?>
