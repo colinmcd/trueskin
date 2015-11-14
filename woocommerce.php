@@ -10,7 +10,7 @@
  * @package true
  */
 
-get_header();
+get_header(); 
 
 ?>
 
@@ -27,6 +27,8 @@ get_header();
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="height120"></div>
+							
+							<?php woocommerce_content(); ?>
 
 							<div class="">
 								<div class="col-xs-12 border">
