@@ -41,7 +41,7 @@ get_header();
 										<div class="row">
 											<div class="col-xs-12  border-bottom">
 												<div class="mission-header">
-													<center><h3>Wrong turn... We'll steer you straight.</h3></center><!-- img src="<?php echo $image ?>" alt="" -->
+													<center><h3>Wrong turn! We'll steer you straight.</h3></center><!-- img src="<?php echo $image ?>" alt="" -->
 												</div>
 											</div>
 										</div>
